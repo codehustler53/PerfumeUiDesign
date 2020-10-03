@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    android:id="@+id/llItem"
+    >
+
+    <TextView
+        android:id="@+id/tvProductTypeCategoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Temp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_13ssp"
+        android:textAlignment="center"
+        />
+
+    <View
+        android:id="@+id/vDot"
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_dot"
+        />
+
+</LinearLayout>
