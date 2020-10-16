@@ -3,12 +3,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:layout_margin="@dimen/_10sdp"
     android:id="@+id/llItem"
     >
 
-    <TextView
+    <com.codehustlers.youtube.codehustlers101.customviews.VerticalTextView
         android:id="@+id/tvProductTypeCategoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +16,7 @@
         android:textColor="@android:color/black"
         android:textSize="@dimen/_13ssp"
         android:textAlignment="center"
+        android:layout_marginStart="@dimen/_10sdp"
         />
 
     <View
@@ -25,6 +26,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_5sdp"
         android:background="@drawable/bg_dot"
+        android:layout_marginStart="@dimen/_10sdp"
         />
 
 </LinearLayout>
