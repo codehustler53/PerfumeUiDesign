@@ -1,7 +1,8 @@
 # PerfumeUiDesign
 To watch the video of how this UI made you can go to <br/>
-![Youtube Video](https://i9.ytimg.com/vi/aMp1scOSImc/mqdefault.jpg?time=1602909900000&sqp=CMztqfwF&rs=AOn4CLAkr8n8sppgu1hQWb5KRgWVDU_gRQ)<br/>
+![Youtube Video](http://i3.ytimg.com/vi/aMp1scOSImc/hqdefault.jpg)<br/>
 [Youtube Part 1](https://www.youtube.com/watch?v=aMp1scOSImc).<br/>
+![Youtube Video](http://i3.ytimg.com/vi/h2xcPoTl1cw/hqdefault.jpg)<br/>
 [Youtube Part 2](https://www.youtube.com/watch?v=h2xcPoTl1cw).
 
 ## Final UI Output
