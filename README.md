@@ -5,7 +5,9 @@ To watch the video of how this UI made you can go to <br/>
 ![Youtube Video](http://i3.ytimg.com/vi/h2xcPoTl1cw/hqdefault.jpg)<br/>
 [Youtube Part 2](https://www.youtube.com/watch?v=h2xcPoTl1cw).<br/>
 ![Youtube Video](http://i3.ytimg.com/vi/FBtqSgR3Rik/hqdefault.jpg)<br/>
-[Youtube Part 2.1](https://youtu.be/FBtqSgR3Rik).
+[Youtube Part 2.1](https://youtu.be/FBtqSgR3Rik).<br/>
+![Youtube Video](http://i3.ytimg.com/vi/UL3pMDz1jBE/hqdefault.jpg)<br/>
+[Youtube Part 3](https://youtu.be/UL3pMDz1jBE).
 
 ## Final UI Output
 ![Dribbble Design Preview](https://cdn.dribbble.com/users/5269718/screenshots/14028470/media/9092914cfd9e752339ff10a1ed7b2fe0.png)<br/>
