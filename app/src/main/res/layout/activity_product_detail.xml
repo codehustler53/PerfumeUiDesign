@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDrawerHome"
+    tools:context=".ProductDetailActivity">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_white"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:id="@+id/ivProductDetailImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvProductDetailName"
+                android:src="@drawable/iv_perfume_product"
+                />
+
+            <TextView
+                android:id="@+id/tvProductDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvProductDetailDescription"
+                android:text="Bright Crystal"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@android:color/black"
+                android:layout_margin="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:id="@+id/tvProductDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvProductDetailPrice"
+                android:text="The website will be divided into different pages which will include all the information about your company, products, services, locations, certifications, etc."
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                />
+
+            <TextView
+                android:id="@+id/tvProductDetailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductDetailDescription"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:text="$ 35.00"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_add_minus"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvProductDetailPrice"
+                app:layout_constraintBottom_toBottomOf="@+id/tvProductDetailPrice"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_minus" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    />
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_add" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/flMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cart">
+
+        <TextView
+            android:padding="@dimen/_20sdp"
+            android:text="Add to Cart"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/_20sdp"
+            android:textSize="@dimen/_20ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_cart"
+
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

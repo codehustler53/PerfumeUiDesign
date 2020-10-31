@@ -1,5 +1,6 @@
 package com.codehustlers.youtube.codehustlers101.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.codehustlers.youtube.codehustlers101.ProductDetailActivity
 import com.codehustlers.youtube.codehustlers101.R
 import com.codehustlers.youtube.codehustlers101.model.ProductDetailModel
 
@@ -41,7 +43,10 @@ class ProductDetailAdapter(var listOfProducts: List<ProductDetailModel>): Recycl
         }
 
         holder.item.setOnClickListener {
-            Toast.makeText(holder.itemView.context, "Open Product Detail", Toast.LENGTH_SHORT).show()
+            val intent = Intent(holder.itemView.context, ProductDetailActivity::class.java)
+            intent.putExtra("ProductDetail", listOfProducts[holder.adapterPosition])
+            holder.itemView.context.startActivity(intent)
+//            Toast.makeText(holder.itemView.context, "Open Product Detail", Toast.LENGTH_SHORT).show()
         }
 
     }

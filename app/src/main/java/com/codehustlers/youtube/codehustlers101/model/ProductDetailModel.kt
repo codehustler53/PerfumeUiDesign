@@ -1,3 +1,7 @@
 package com.codehustlers.youtube.codehustlers101.model
 
-data class ProductDetailModel(var productName: String, var productPrice: String, var isFav: Boolean = false)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class ProductDetailModel(var productName: String, var productPrice: String, var isFav: Boolean = false) : Parcelable
